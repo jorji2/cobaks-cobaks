@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link href="styleisi.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio autoplay>
+        <source src="PS2 Game selection sfx ... or hang up _ notification sound ▓ Free Sound Effect  IDK - VRT sound effects.mp3">
+    </audio>
+
+    <li><a href="#">PROPOSISI</a></li>
+
+    <!-- MATERI PERTAMA -->
+    <button class="btn-tampil" onclick="tampilkanMateri()">
+        Buka Materi
+    </button>
+
+    <div id="materi" class="kolom-materi"></div>
+
+    <script>
+        function tampilkanMateri() {
+            var materi = document.getElementById("materi");
+            var tombol = document.querySelector(".btn-tampil");
+
+            materi.classList.toggle("aktif");
+
+            if (materi.classList.contains("aktif")) {
+                materi.innerHTML =
+                    "<h3>Isi Teks dari Script</h3><p>Pak Kandi 67</p>" + "<audio autoplay><source src='PS2 Game selection sfx ... or hang up _ notification sound ▓ Free Sound Effect  IDK - VRT sound effects.mp3'></audio>";
+
+                tombol.innerText = "Tutup Materi";
+            }
+
+            if (!materi.classList.contains("aktif")) {
+                materi.innerHTML = "";
+                tombol.innerText = "Buka Materi";
+            }
+        }
+    </script>
+
+
+    <!-- MATERI KEDUA -->
+    <button class="btn-tampil1" onclick="tampilkanMateri1()">
+        Buka Materi1
+    </button>
+
+    <div id="materi1" class="kolom-materi1"></div>
+
+    <script>
+        function tampilkanMateri1() {
+            var materi1 = document.getElementById("materi1");
+            var tombol1 = document.querySelector(".btn-tampil1");
+
+            materi1.classList.toggle("aktif");
+
+            if (materi1.classList.contains("aktif")) {
+                materi1.innerHTML =
+                    "<h3>Isi Teks dari Script</h3><p>Pak Kandi 61</p>" + "<img src='road_roller_da.jpg' widht='20%'>" + "<audio autoplay><source src='Hankaku Street Daytime BGM  Neverness to Everness (NTE) OST - JamesJGoodwin.mp3'></audio>";
+
+                tombol1.innerText = "Tutup Materi1";
+            }
+
+            if (!materi1.classList.contains("aktif")) {
+                materi1.innerHTML = "";
+                tombol1.innerText = "Buka Materi1";
+            }
+        }
+    </script>
+
+    <ul>
+        <br>
+        <br>
+        <br>
+        <li><a href="tugas matdis.html">kembali ke menu</a></li>
+    </ul>
+
+</body>
+</html>
